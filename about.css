@@ -1,0 +1,35 @@
+body{
+	background-image: url(images/123.jpg);
+	background-repeat: no-repeat;
+	background-size: cover
+	
+}
+
+#aboutus h2{
+	margin-bottom: 25px;
+	
+}
+.container{
+	padding: 10%;
+	color: aliceblue;
+	font-size: 18.5px;
+}
+.img-wrap{
+	width: 100%;
+}
+.img-wrap img{
+	width: 100%;
+	padding: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #999999;
+}
+
+
+
+
+
+
+
+
+
+

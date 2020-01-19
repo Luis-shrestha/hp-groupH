@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+		Contact us
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="aa.css">
+		<link rel="shortcut icon" type="images/png" href="images/logo.png">
+		<style type="text/css">
+			body{
+				background-image: url(images/22.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			.fifth {
+  				background-color: black;
+  				clear: both;
+  				height: 70px;
+				width: 100%;
+  				text-align: center;
+  				color: white;
+				font-family:century gothic; }
+  			.fifth img {
+				margin-top: 25px; 
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="logo"><a href="index.html">
+				<img src=" images/logo.png"></a>
+			</div>
+			<ul>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About us</a></li>
+				<li><a href="laptops.html">Product</a>
+					<ul>
+						<li><a href="laptops.html">Laptops</a></li>
+						<li><a href="desktop.html">Desktop</a></li>
+						<li><a href="accessories.html">Accessories</a></li>
+					</ul>
+				</li>
+				<li><a href="service.html">Services</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+		<div class="wrapper">
+ 		<h2> contact us</h2>
+			<div id="error_message"></div>
+		<form id="form" onsubmit="return validation()">
+			
+			<div class="input_field">
+			<input type="text" placeholder="Fullname" id="name">
+			</div>
+			
+			<div class="input_field">
+			<input type="text" placeholder="Subject" id="subject">
+			</div>
+			
+			<div class="input_field">
+			<input type="text" placeholder="Email" id="email">
+			</div>
+			
+			<div class="input_field">
+			<input type="text" placeholder="Phone no" id="phone">
+			</div>
+			<div class="input_field">
+			<input type="text" placeholder="Address" id="Address">
+			</div>
+	
+			<div class="input_field">
+			<textarea id="messaage" placeholder="Feedback" cols="30" rows="10"></textarea>
+			</div>
+			<div class="btn">
+				<input type="submit">
+			</div>
+			
+			</form>
+		</div>
+
+	<div class="fifth">
+                
+               Copyright &copy HP link 2020.
+                   <a href="https://www.facebook.com/HP/" target="_blank"><img src="images/fb.png" height="30px" width="30px" title="facebook"></a>
+                    <a href="https://twitter.com/HP"  target="_blank"><img src="images/twitter.png" height="30px" width="30px" title="twitter"></a>
+                    <a href="https://www8.hp.com/us/en/home.html"  target="_blank"><img src="images/googleplus.png" height="30px" width="30px" title="google plus"></a>
+                
+            </div>
+	</body>
+	<script>
+		function validation(){
+			var name = document.getElementById("name").value;
+			var subject = document.getElementById("subject").value;
+			var email = document.getElementById("email").value;
+			var phone = document.getElementById("phone").value;
+			var Address = document.getElementById("Address").value;
+			var messaage = document.getElementById("messaage").value;
+			var error_message = document.getElementById("error_message");
+			var text;
+			error_message.style.padding = "10px";
+			
+			if(name.length <5){
+				text = "Please Enter Valid Name";
+				error_message.innerHTML = text;
+				return false;
+			}
+			
+			if(subject.length <5){
+				text = "Subject Must Be more than 5 letters";
+				error_message.innerHTML = text;
+				return false;
+			}
+			
+			if(email.indexOf("@") == -1 || email.length < 6){
+				text = "Please Enter Valid Email";
+				error_message.innerHTML = text;
+				return false;
+			}
+			
+			if(isNaN(phone) || phone.length != 10){
+				text = "Please Enter Phone Number";
+				error_message.innerHTML = text;
+				return false;
+			}
+			
+			if(Address.length <8){
+				text = "Please Enter Valid Address";
+				error_message.innerHTML = text;
+				return false;
+			
+			}
+			alert("Form Submitted Successfully");
+			return false;
+		}
+		
+	</script>
+</html>

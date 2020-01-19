@@ -1,0 +1,63 @@
+body{
+		background-image: linear-gradient(rgba( 0,0,0,0.6),rgba(0,0,0,0.6)),url(images/service.jpeg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		color: #fff !important;
+	}
+.service{
+
+	text-align: center;
+	height: 4px;
+	padding: 150px;
+	
+}
+
+h1{
+	font-family: sans-serif;
+	letter-spacing: 3px;
+	height: 5px;
+}
+
+h1:after{
+	content: '';
+	background: white;
+	display: block;
+	width: 150px;
+	height: 3px;
+	margin: 10px auto;
+}
+
+.icons{
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+.col-md-3{
+	border: 2px solid transparent;
+	
+}
+.col-md-3:hover{
+
+	cursor: pointer;
+
+	
+}
+
+.fifth {
+  clear: both;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+	margin-top: 100px;
+  font-family: century-gothic; }
+  .fifth img {
+    margin-top: 25px; }
